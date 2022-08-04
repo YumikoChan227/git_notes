@@ -1,0 +1,42 @@
+windows cmd:
+
+	open: cd
+	show files: dir
+	show hidden files: dir /A
+	creat .txt: echo what you want to write >> txtname.txt 
+	md foldername # new direction
+	rd foldername # del direction
+	type nul>filename.file #creat an empty file
+	del filename.file # del file
+
+
+
+git:
+	git init #set up git, make a empty repository
+	git status #to see the stage
+	git add # add sth to ..
+	git commit -m "note text" # commit the change and write the note to the change
+	git log # see what change made in what time
+	git add # add everything in this directory
+	git diff filename.file # compare current file with the latest save one
+	git checkout filename.file # roll back to the last verson
+	
+	git remote add origin 'my gitaddress.git'
+	git push -u origin master #push the local repository to the remote repository's master branch
+	git rm --cached -r . # remove everything from staging area
+	git clone repository's_url #clone repository from github
+	
+	git branch #see the branch informations
+	git branch newbranch_name # new branch
+	git checkout branchname # switch branch
+
+	git merge branchname # merge the branch to the master branch
+	git branch -D xxx #delete branch
+
+	git ignore:
+		Firstly, in the direction creat a file named .gitignore
+		Secondly, write the file name which I want to hide
+		Finally, when I write git add . ,the secret file I will not show
+
+
+	
